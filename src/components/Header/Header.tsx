@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from './Header.module.scss'
+import styles from './Header.module.scss';
+import {ReactComponent as Logo} from '@images/logo.svg'
 
 type Props = {}
 
@@ -7,7 +8,7 @@ const Header = (props: Props) => {
   console.log("item class ----->" + styles.menuItem)
   return (
     <div className={styles.container}>
-      <a href='/home'>Ryan</a>
+      <Logo />
       <div>
         <ul className={styles.menu}>
           <li className={styles.menuItem}>Home</li>

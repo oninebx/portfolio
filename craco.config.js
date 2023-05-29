@@ -1,4 +1,10 @@
+const path = require("path")
 module.exports = {
+  webpack: {
+    alias: {
+      "@images": path.join(path.resolve(__dirname, "./src/assets/images")),
+    }
+  },
   style: {
     css: {
       loaderOptions: {
@@ -11,5 +17,6 @@ module.exports = {
         }
       }
     }
-  }
+  },
+  
 }
