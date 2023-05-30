@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  box-sizing: border-box;
+  
+  .intro-block {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+    .top-line {
+      display:inline-block;
+      background-color: $white;
+      width: 30%;
+      height: .5rem;
+    }
+
+    .display-text {
+      font-size: 5rem;
+      color: $white;
+      line-height: 1.132em;
+      font-weight: 700;
+    }
+  }
+}

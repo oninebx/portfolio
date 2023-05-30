@@ -5,7 +5,7 @@ import {ReactComponent as Logo} from '@images/logo.svg'
 type Props = {}
 
 const Header = (props: Props) => {
-  console.log("item class ----->" + styles.menuItem)
+  
   return (
     <div className={styles.container}>
       <Logo />
