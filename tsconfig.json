@@ -23,6 +23,9 @@
     "paths": {
       "@images/*": [
         "assets/images/*"
+      ],
+      "@styles/*":[
+        "assets/styles/*"
       ]
     }
   },

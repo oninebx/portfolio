@@ -3,6 +3,7 @@ module.exports = {
   webpack: {
     alias: {
       "@images": path.join(path.resolve(__dirname, "./src/assets/images")),
+      "@styles": path.join(path.resolve(__dirname, "./src/assets/styles")),
     }
   },
   style: {
@@ -19,7 +20,7 @@ module.exports = {
     },
     sass: {
       loaderOptions: {
-        additionalData: `@import "src/assets/styles/index.scss";`,
+        additionalData: `@import "src/assets/styles/global/index.scss";`,
       },
     }
   },

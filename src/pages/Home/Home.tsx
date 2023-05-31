@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Home.module.scss'
+import BriefSection from 'components/BriefSection';
 
 type Props = {}
 
@@ -15,7 +16,14 @@ const Home = (props: Props) => {
           Running since 2005. Getting slower over time, but will keep running.
         </span>
       </div>
-      <div>Right</div>
+      <div className={styles.introBlock}>
+        <BriefSection 
+          title='ABOUT ME' 
+          content={'I have been working as a programmer and came to New Zealand from China in 2019.\
+          I enjoy long-distance running to stay active, and occasionally I go hiking with friends as well.'}
+          linkText='LEARN MORE'
+          linkTarget='/about' />
+      </div>
     </div>
   )
 }

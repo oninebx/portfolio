@@ -1,0 +1,16 @@
+.container {
+  composes: column from '@styles/common/container.module.scss';
+  padding: 10px;
+
+  .title {
+    line-height: 1.111em;
+    &.bold {
+      font-weight: $weight-bold;
+      color: $white
+    }
+    &.uppercase {
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+  }
+}
